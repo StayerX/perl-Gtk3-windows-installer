@@ -20,11 +20,11 @@ mkdir("$build_dir") or die "Could not create the build directory: $! \n Please r
 
 print_welcome_page();
 
-print "Please give the Path to your msys2 environment [default: C:\\msys64] \n";
+print "Please give the Path to your msys2 environment [default: F:\\msys64] \n";
 my $path = <STDIN>;
 $path =~ s/\\/\\\\/;
 chomp $path;
-$path = "C:\\msys64" unless ($path);
+$path = "F:\\msys64" unless ($path);
 # Lösche "\" am Ende
 $path =~ s/\\+$//;
 
